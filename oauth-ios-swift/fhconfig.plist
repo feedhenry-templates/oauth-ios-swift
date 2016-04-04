@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist>
+<plist version="1.0">
     <dict>
         <key>host</key>
-        <string>https://testing.zeta.feedhenry.com</string>
+        <string>replaceme</string>
         <key>appid</key>
-        <string>5wla7lavwxtr3fixsuye7ism</string>
+        <string>replaceme</string>
         <key>projectid</key>
-        <string>5wla7lg3m33ltuibg7j7hysc</string>
+        <string>replaceme</string>
         <key>appkey</key>
-        <string>a93e48999178b302ee3536000afab08c610c50ca</string>
+        <string>replaceme</string>
         <key>connectiontag</key>
-        <string>0.0.1</string>
+        <string>replaceme</string>
     </dict>
 </plist>
