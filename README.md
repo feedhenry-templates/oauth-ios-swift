@@ -2,13 +2,13 @@
 
 Author: Corinne Krych   
 Level: Intermediate  
-Technologies: Objective-C, iOS, RHMAP, cocoapods.
+Technologies: Swift, iOS, RHMAP, cocoapods.
 Summary: A demonstration of how to use oauth usage with RHMAP. 
 Community Project : [Feed Henry](http://feedhenry.org). **Community Only, not available as template in RHMAP.**
 Target Product: RHMAP  
 Product Versions: RHMAP 3.7.0+   
 Source: https://github.com/feedhenry-templates/oauth-ios-app  
-Prerequisites: fh-ios-sdk : 3.+, Xcode : 7.2+, iOS SDK : iOS7+
+Prerequisites: fh-ios-swift-sdk : 3.+, Xcode : 7.2+, iOS SDK : iOS8+
 
 ## What is it?
 
@@ -31,11 +31,11 @@ If you wish to contribute to this template, the following information may be hel
 
 1. Clone this project
 
-2. Populate ```FHAuthDemo/fhconfig.plist``` with your values as explained [here](http://docs.feedhenry.com/v3/dev_tools/sdks/ios.html#ios-configure).
+2. Populate ```oauth-ios-swift/fhconfig.plist``` with your values as explained [here](http://docs.feedhenry.com/v3/dev_tools/sdks/ios.html#ios-configure).
 
 3. Run ```pod install```
 
-4. Open FHAuthDemo.xcworkspace
+4. Open oauth-ios-swift.xcworkspace
 
 5. Run the project
  
@@ -54,21 +54,30 @@ Go to ```Admin > Auth Policies```, select the ```Create``` button.
 
 ### Set up FHAuthDemo
 
-In ```FHAuthDemo/FHLoginViewController.m```:
+In ```oauth-ios-swift/ViewController.m```:
 
 ```
 - (void)viewDidLoad
-{
-  self.navigationItem.title = @"Login With ...";
-  [super viewDidLoad];
-  AuthMethod* googleauth = [[GoogleAuthMethod alloc] initWithName:@"Google OAuth" icon:@"auth_google" policyId:@"Google"]; // [1]
-  self.authMethods = @[googleauth;
-    
-  [authList reloadData];
+@IBAction func onGoogleConnect(sender: AnyObject) {
+  FH.init { (response: Response, error: NSError?) -> Void in
+    if let error = error {
+      print("Error during FH.init \(error)")
+      return
+    }
+    let request = FH.authRequest("google")
+    request.parentViewController = self
+    request.exec({ (resposne: Response, error: NSError?) -> Void in
+      if let error = error {
+        print("Error connecting to Google \(error)")
+        return
+      }
+      print("Successfully connected \(response.rawResponseAsString)")
+    })
+  }
 }
 ```
 
-[1] Make sure ```Google``` matches the name you entered in RHMAP configuration.
+[1] Make sure ```google``` matches the name you entered in RHMAP configuration.
 
 ### Running the app
 
