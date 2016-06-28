@@ -38,12 +38,17 @@ class ViewController: UIViewController {
             }
             let request = FH.authRequest("google")
             request.parentViewController = self
-            request.exec({ (resposne: Response, error: NSError?) -> Void in
+            request.exec({ (response: Response, error: NSError?) -> Void in
                 if let error = error {
                     print("Error connecting to Google \(error)")
                     return
                 }
                 print("Successfully connected \(response.rawResponseAsString)")
+                
+
+                FH.cloud("hello", completionHandler: { (res:Response, err:NSError?) in
+                    print("Successfully send coud call")
+                })
             })
         }
     }

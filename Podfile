@@ -4,4 +4,5 @@ xcodeproj 'oauth-ios-swift.xcodeproj'
 platform :ios, '8.0'
 use_frameworks!
 
-pod 'FeedHenry', :git => 'https://github.com/feedhenry/fh-ios-swift-sdk.git'
+pod 'AeroGearHttp', :git => 'https://github.com/corinnekrych/aerogear-ios-http-1.git', :branch => 'allow.additional.headers.in.request'
+pod 'FeedHenry', :git => 'https://github.com/corinnekrych/fh-ios-swift-sdk.git', :branch => 'RHMAP-7467.oauth.session'
