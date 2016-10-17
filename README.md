@@ -27,19 +27,16 @@ This is a community project. It is not available in RHMAP, but you can easely us
 - follow local Clone instructions.
 
 ### Local Clone (ideal for Open Source Development)
+
 If you wish to contribute to this template, the following information may be helpful; otherwise, RHMAP and its build facilities are the preferred solution.
 
 ## Build instructions
 
 1. Clone this project
-
-2. Populate ```oauth-ios-swift/fhconfig.plist``` with your values as explained [here](http://docs.feedhenry.com/v3/dev_tools/sdks/ios.html#ios-configure).
-
-3. Run ```pod install```
-
-4. Open oauth-ios-swift.xcworkspace
-
-5. Run the project
+1. Populate ```oauth-ios-swift/fhconfig.plist``` with your values as explained [here](http://docs.feedhenry.com/v3/dev_tools/sdks/ios.html#ios-configure).
+1. Run ```pod install```
+1. Open oauth-ios-swift.xcworkspace
+1. Run the project
  
 ## How does it work?
 
