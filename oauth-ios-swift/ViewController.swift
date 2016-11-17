@@ -30,7 +30,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func onGoogleConnect(sender: AnyObject) {
+    @IBAction func onGoogleConnect(_ sender: AnyObject) {
         FH.init { (response: Response, error: NSError?) -> Void in
             if let error = error {
                 print("Error during FH.init \(error)")

@@ -2,7 +2,7 @@
 
 Author: Corinne Krych   
 Level: Intermediate  
-Technologies: Swift 2.3, iOS, RHMAP, cocoapods.
+Technologies: Swift 3, iOS, RHMAP, cocoapods.
 Summary: A demonstration of how to use oauth usage with RHMAP.
 Community Project : [Feed Henry](http://feedhenry.org). **Community Only, not available as template in RHMAP.**   
 Target Product: RHMAP  
