@@ -38,7 +38,7 @@ class ViewController: UIViewController {
             }
             let request = FH.authRequest("google")
             request.parentViewController = self
-            request.exec({ (resposne: Response, error: NSError?) -> Void in
+            request.exec(completionHandler: { (resposne: Response, error: NSError?) -> Void in
                 if let error = error {
                     print("Error connecting to Google \(error)")
                     return
