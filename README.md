@@ -8,7 +8,7 @@ Community Project : [Feed Henry](http://feedhenry.org). **Community Only, not av
 Target Product: RHMAP  
 Product Versions: RHMAP 3.7.0+   
 Source: https://github.com/feedhenry-templates/oauth-ios-swift  
-Prerequisites: fh-ios-swift-sdk : 5+, Xcode : 8+, iOS SDK : iOS8+, CocoaPods 1.1.0+
+Prerequisites: fh-ios-swift-sdk : 5.0.1+, Xcode : 8+, iOS SDK : iOS8+, CocoaPods 1.1.0+
 
 ## What is it?
 
