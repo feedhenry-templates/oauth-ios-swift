@@ -5,7 +5,7 @@
 Author: Corinne Krych   
 Level: Intermediate  
 Technologies: Swift, iOS, RHMAP, cocoapods.
-Summary: A demonstration of how to use oauth usage with RHMAP. 
+Summary: A demonstration of how to use oauth usage with RHMAP.
 Community Project : [Feed Henry](http://feedhenry.org). **Community Only, not available as template in RHMAP.**   
 Target Product: RHMAP  
 Product Versions: RHMAP 3.7.0+   
@@ -37,7 +37,7 @@ If you wish to contribute to this template, the following information may be hel
 1. Run ```pod install```
 1. Open oauth-ios-swift.xcworkspace
 1. Run the project
- 
+
 ## How does it work?
 
 ### Set up Google provider
@@ -53,10 +53,9 @@ Go to ```Admin > Auth Policies```, select the ```Create``` button.
 
 ### Set up FHAuthDemo
 
-In ```oauth-ios-swift/ViewController.m```:
+In ```oauth-ios-swift/ViewController.swift```:
 
 ```
-- (void)viewDidLoad
 @IBAction func onGoogleConnect(sender: AnyObject) {
   FH.init { (response: Response, error: NSError?) -> Void in
     if let error = error {
