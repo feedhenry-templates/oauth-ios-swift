@@ -30,7 +30,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func onGoogleConnect(sender: AnyObject) {
+    @IBAction func onGoogleConnect(_ sender: AnyObject) {
         FH.init { (response: Response, error: NSError?) -> Void in
             if let error = error {
                 print("Error during FH.init \(error)")
@@ -38,7 +38,7 @@ class ViewController: UIViewController {
             }
             let request = FH.authRequest("google")
             request.parentViewController = self
-            request.exec({ (resposne: Response, error: NSError?) -> Void in
+            request.exec(completionHandler: { (resposne: Response, error: NSError?) -> Void in
                 if let error = error {
                     print("Error connecting to Google \(error)")
                     return

@@ -5,5 +5,5 @@ platform :ios, '8.0'
 use_frameworks!
 
 target 'oauth-ios-swift' do
-	pod 'FeedHenry', '~> 4.1.1'
+	pod 'FeedHenry', '5.0.1'
 end
