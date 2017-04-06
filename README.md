@@ -1,4 +1,5 @@
-# oauth-ios-swift [![Build Status](https://travis-ci.org/feedhenry-templates/oauth-ios-swift.png)](https://travis-ci.org/feedhenry-templates/oauth-ios-swift)
+# oauth-ios-swift
+[![Build Status](https://travis-ci.org/feedhenry-templates/oauth-ios-swift.png)](https://travis-ci.org/feedhenry-templates/oauth-ios-swift)
 
 > Obj-C version is available [here](https://github.com/feedhenry-templates/oauth-ios-app).
 
