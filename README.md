@@ -4,14 +4,14 @@
 > Obj-C version is available [here](https://github.com/feedhenry-templates/oauth-ios-app).
 
 Author: Corinne Krych   
-Level: Intermediate  
-Technologies: Swift 3, iOS, RHMAP, cocoapods.
-Summary: A demonstration of how to use oauth usage with RHMAP.
+Level: Intermediate   
+Technologies: Swift 3, iOS, RHMAP, cocoapods.   
+Summary: A demonstration of how to use oauth usage with RHMAP.   
 Community Project : [Feed Henry](http://feedhenry.org). **Community Only, not available as template in RHMAP.**   
-Target Product: RHMAP  
+Target Product: RHMAP   
 Product Versions: RHMAP 3.7.0+   
-Source: https://github.com/feedhenry-templates/oauth-ios-swift  
-Prerequisites: fh-ios-swift-sdk : 5.0.1+, Xcode : 8+, iOS SDK : iOS8+, CocoaPods 1.1.0+
+Source: https://github.com/feedhenry-templates/oauth-ios-swift   
+Prerequisites: fh-ios-swift-sdk: 5.0.1+, Xcode: 8+, iOS SDK: iOS 9+, CocoaPods 1.3.0+
 
 ## What is it?
 
