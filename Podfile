@@ -1,7 +1,7 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
 project 'oauth-ios-swift.xcodeproj'
-platform :ios, '8.0'
+platform :ios, '9.0'
 use_frameworks!
 
 target 'oauth-ios-swift' do
