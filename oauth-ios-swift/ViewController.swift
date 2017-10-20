@@ -43,7 +43,7 @@ class ViewController: UIViewController {
                     print("Error connecting to Google \(error)")
                     return
                 }
-                print("Successfully connected \(response.rawResponseAsString)")
+                print("Successfully connected \(String(describing: response.rawResponseAsString))")
             })
         }
     }
